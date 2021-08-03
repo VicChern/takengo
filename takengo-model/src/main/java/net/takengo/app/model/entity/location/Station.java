@@ -23,12 +23,13 @@ public class Station extends AbstractEntity {
 	
 	private TransportType transportType;
 
-	public City getCity() {
-		return city;
+	public Station(final City city, TransportType transportType) {
+		this.city = city;
+		this.transportType = transportType;
 	}
 
-	public void setCity(City city) {
-		this.city = city;
+	public City getCity() {
+		return city;
 	}
 
 	public Address getAddress() {
@@ -57,10 +58,6 @@ public class Station extends AbstractEntity {
 
 	public TransportType getTransportType() {
 		return transportType;
-	}
-
-	public void setTransportType(TransportType transportType) {
-		this.transportType = transportType;
 	}
 
 }
