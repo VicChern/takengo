@@ -1,8 +1,8 @@
-package net.takengo.app.model.location;
+package net.takengo.app.entity.location;
 
-import net.takengo.app.model.entity.location.City;
-import net.takengo.app.model.entity.location.Station;
-import net.takengo.app.model.entity.transport.TransportType;
+import net.takengo.app.entity.location.City;
+import net.takengo.app.entity.location.Station;
+import net.takengo.app.entity.transport.TransportType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
