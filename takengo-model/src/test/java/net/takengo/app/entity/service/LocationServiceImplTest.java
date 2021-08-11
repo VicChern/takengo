@@ -25,7 +25,7 @@ public class LocationServiceImplTest {
     @Test
     public void testNoDataReturnedAtStart() {
         List<City> cities = service.findCities();
-        assertEquals(0, cities.size());
+        assertEquals(1, cities.size());
     }
 
     @Test
