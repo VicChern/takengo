@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/takengo.iml" filepath="$PROJECT_DIR$/takengo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/takengo-model/takengo-model.iml" filepath="$PROJECT_DIR$/takengo-model/takengo-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/takengo-persistence/takengo-persistence.iml" filepath="$PROJECT_DIR$/takengo-persistence/takengo-persistence.iml" />
-      <module fileurl="file://$PROJECT_DIR$/takengo-presentation/takengo-presentation.iml" filepath="$PROJECT_DIR$/takengo-presentation/takengo-presentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takengo-main-app/takengo-main-app.iml" filepath="$PROJECT_DIR$/takengo-main-app/takengo-main-app.iml" />
     </modules>
   </component>
 </project>
