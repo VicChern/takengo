@@ -1,6 +1,6 @@
 package net.takengo.app.entity.location;
 
-import net.takengo.app.entity.base.AbstractEntity;
+import net.takengo.app.entity.base.TakenGoAbstractEntity;
 import net.takengo.app.entity.transport.TransportType;
 
 /**
@@ -9,7 +9,7 @@ import net.takengo.app.entity.transport.TransportType;
  * @author admin
  *
  */
-public class Station extends AbstractEntity {
+public class Station extends TakenGoAbstractEntity {
 	private City city;
 	
 	private Address address;

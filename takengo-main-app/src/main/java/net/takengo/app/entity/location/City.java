@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Set;
 
 import net.takengo.app.utils.CommonUtils;
-import net.takengo.app.entity.base.AbstractEntity;
+import net.takengo.app.entity.base.TakenGoAbstractEntity;
 import net.takengo.app.entity.transport.TransportType;
 
 /**
@@ -13,7 +13,7 @@ import net.takengo.app.entity.transport.TransportType;
  * @author admin
  *
  */
-public class City extends AbstractEntity {	
+public class City extends TakenGoAbstractEntity {
 	private String name;
 	
 	/**

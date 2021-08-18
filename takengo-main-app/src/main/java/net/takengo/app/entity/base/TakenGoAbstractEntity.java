@@ -9,7 +9,7 @@ import net.takengo.app.entity.person.Account;
  * @author admin
  *
  */
-public abstract class AbstractEntity {
+public abstract class TakenGoAbstractEntity {
 	/**
 	 * Unique entity identifier
 	 */
@@ -91,7 +91,7 @@ public abstract class AbstractEntity {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		AbstractEntity other = (AbstractEntity) obj;
+		TakenGoAbstractEntity other = (TakenGoAbstractEntity) obj;
 		if (id != other.id)
 			return false;
 		return true;

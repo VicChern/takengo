@@ -4,48 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5077259e-f73e-4626-9573-b66ad066b823" name="Changes" comment="Added Spring support">
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/SpringBootApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/conroller/LocationRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/TakenGoConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/TakenGoPersistenceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/base/TakenGoAppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/utils/Checks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/utils/ReflectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="5077259e-f73e-4626-9573-b66ad066b823" name="Changes" comment="Refactored whole structure of the project">
+      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/dto/CityDTOTakenGo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/dto/TakenGoBaseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/dto/transformer/BaseTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/dto/transformer/BaseTransformerDTOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/base/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/base/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/CommunicationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/TakenGoCommunicationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/ConfigurationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/FlowException.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/TakenGoFlowException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/PersistenceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/base/AppException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/exception/flow/InvalidParameterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/exception/flow/TakenGoInvalidParameterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/location/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/location/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/location/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/location/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/person/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/person/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/transport/TransportType.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/transport/TransportType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/entity/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/rest/service/LocationRestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/rest/service/LocationRestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/rest/service/LocationRestSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/rest/service/LocationRestSevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/search_criteria/RangeCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/utils/search_criteria/RangeCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/search_criteria/StationCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/utils/search_criteria/StationCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/main/java/net/takengo/app/service/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/service/impl/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/test/java/net/takengo/app/entity/location/CityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/test/java/net/takengo/app/entity/location/CityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/test/java/net/takengo/app/entity/service/LocationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/test/java/net/takengo/app/entity/service/LocationServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/src/test/resources/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/test/resources/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-model/takengo-model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-persistence/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-persistence/takengo-persistence.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-presentation/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo-presentation/takengo-presentation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/takengo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/takengo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takengo-main-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/base/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/base/TakenGoAbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/location/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/person/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/takengo-main-app/src/main/java/net/takengo/app/entity/person/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,9 +61,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2122261" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
@@ -181,7 +150,13 @@
       <updated>1628176606402</updated>
       <workItem from="1628176610064" duration="3095000" />
       <workItem from="1628682897664" duration="6660000" />
-      <workItem from="1628770256677" duration="3595000" />
+      <workItem from="1628770256677" duration="5251000" />
+      <workItem from="1628855565143" duration="1199000" />
+      <workItem from="1629113640371" duration="596000" />
+      <workItem from="1629225088218" duration="2186000" />
+      <workItem from="1629288857336" duration="598000" />
+      <workItem from="1629298295129" duration="595000" />
+      <workItem from="1629318618345" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="Added Spring support">
       <created>1628684835974</created>
@@ -190,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628684835974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored whole structure of the project">
+      <created>1628774270539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628774270539</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +192,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Spring support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Spring support" />
+    <MESSAGE value="Refactored whole structure of the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored whole structure of the project" />
   </component>
 </project>
